@@ -1,0 +1,17 @@
+{
+  "name": "TEST",
+  "version": "0.1.0",
+  "description": "Тестовое задание от LoftSchool",
+  "author": "Павлов Сергей",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VorgSpring/Loft-School-Test-Task.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "build": "gulp less && gulp postcss",
+    "start": "npm run build && gulp serve"
+  }
+}
