@@ -1,0 +1,18 @@
+// ---------Global-----------
+@import "global/normalize";
+@import "global/fonts";
+@import "global/variables";
+@import "global/mainstream";
+
+// ----------Block-----------
+// header
+@import "block/page-header";
+@import "block/user";
+@import "block/social";
+
+// body
+@import "block/information";
+@import "block/courses";
+
+//footer
+@import "block/page-footer";
