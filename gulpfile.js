@@ -1,16 +1,15 @@
 "use strict";
 
-var gulp =require('gulp');
-var sass = require('gulp-sass');
-var plumber = require('gulp-plumber');
+var gulp =require("gulp");
+var sass = require("gulp-sass");
+var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var jade = require('gulp-jade');
+var jade = require("gulp-jade");
 var server = require("browser-sync");
 
-
-gulp.task('style', function () {
-    gulp.src('sass/style.scss')
+gulp.task("style", function () {
+    gulp.src("sass/style.scss")
         .pipe(plumber())
         .pipe(sass())
         .pipe(postcss([
@@ -22,16 +21,16 @@ gulp.task('style', function () {
                 "last 2 Edge versions"
             ]})
         ]))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest("css"))
         .pipe(server.reload({stream: true}));
 });
 
-gulp.task('jade', function(){
-    gulp.src('./jade/index.jade')
+gulp.task("jade", function(){
+    gulp.src("./jade/index.jade")
         .pipe(jade({
             pretty: true
         }))
-        .pipe(gulp.dest('./'))
+        .pipe(gulp.dest("./"))
 });
 
 gulp.task("serve", ["style"], function() {
@@ -39,7 +38,7 @@ gulp.task("serve", ["style"], function() {
         server: "."
     });
     gulp.watch("sass/**/*.scss", ["style"]);
-    gulp.watch('jade/**/*.jade',['jade']);
+    gulp.watch("jade/**/*.jade",["jade", "prettify"]);
     gulp.watch("*.html")
         .on("change", server.reload);
 });

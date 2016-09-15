@@ -1,0 +1,6 @@
+mixin infoItem(item)
+    div.information__item(class="information__item--#{item.mod}")
+        h3.information__title= item.title
+        p.information__content= item.content
+            if(item.link)
+                a(href="http://#{item.link}") www.#{item.link}
