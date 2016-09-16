@@ -1,9 +1,10 @@
 mixin courseItem(item)
-    div.courses__item(class="courses__item--#{item.id}")
-        h3.courses__name= item.name
-        p.courses__content= item.content
-        p.courses__duration= item.duration
-        div.courses__check
+    .courses__item(class="courses__item--#{item.id}")
+        .courses__container
+            h3.courses__name= item.name
+            p.courses__content= item.content
+            p.courses__duration= item.duration
+        .courses__check
             input(type="checkbox", id="#{item.id}")
             label(for="#{item.id}") Посмотрел
-        div.courses__overlay
+            .courses__overlay

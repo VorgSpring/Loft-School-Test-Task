@@ -1,0 +1,41 @@
+.information {
+  @include container(69px, 74px);
+
+  &__items {
+    font-size: 0;
+    text-align: left;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 35px 19px 0 0;
+    padding-left: 170px;
+    width: 290px;
+
+    &--about {
+      background: url("../img/icons/hello.svg") no-repeat 10px 2px;
+    }
+
+    &--experience {
+      background: url("../img/icons/experience.svg") no-repeat 12px 2px;
+    }
+  }
+
+  &__item-title {
+    @include fonts(21px, 400, 28px, $black);
+    margin-bottom: 7px;
+  }
+
+  &__content {
+    @include fonts(14px, 200, 21px, $grey);
+
+    a {
+      color: $link-color;
+      text-decoration: none;
+      display: inline-block;
+      line-height: 15px;
+      border-bottom: 1px solid $link-color;
+    }
+  }
+}

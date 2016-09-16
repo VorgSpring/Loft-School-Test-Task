@@ -1,0 +1,14 @@
+.page-footer {
+  position: relative;
+  height: 72px;
+  margin-top: -72px;
+  background-color: $black;
+
+  p {
+    @include fonts(14px, 400, 21px, #fff);
+    padding-top: 15px;
+    text-align: center;
+    width: 520px;
+    margin: 0 auto;
+  }
+}

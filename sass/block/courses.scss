@@ -1,0 +1,148 @@
+.courses {
+  background: url("../img/gplaypattern.png");
+  position: relative;
+  min-height: 1240px;
+
+  &__wrapper {
+    @include container(73px, 16px);
+  }
+
+  &__items {
+    font-size: 0;
+    text-align: left;
+    padding: 42px 10px;
+  }
+
+  &__item {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+    vertical-align: top;
+    padding-top: 170px;
+    margin: 0 20px 25px 0;
+    width: 300px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      padding-top: 165px;
+
+      div[class$="__container"] {
+        border-top: 5px solid $green;
+      }
+
+      h3 {
+        color: $green;
+      }
+    }
+    
+    &--js {
+      background: #fff url("../img/logo/js.jpg") no-repeat top center;
+    }
+
+    &--jquery {
+      background: #fff url("../img/logo/jquery.jpg") no-repeat top center;
+    }
+
+    &--base {
+      background: #fff url("../img/logo/base-elemens.jpg") no-repeat top center;
+    }
+
+    &--adaptive {
+      background: #fff url("../img/logo/adaptive-web.jpg") no-repeat top center;
+    }
+
+    &--generator {
+      background: #fff url("../img/logo/btn-generator.jpg") no-repeat top center;
+    }
+
+    &--gallery {
+      background: #fff url("../img/logo/css-gallery.jpg") no-repeat top center;
+    }
+  }
+
+  &__container {
+    padding: 0 20px;
+  }
+
+  &__name {
+    @include fonts(21px, 400, 25px, $grey);
+    margin: 15px 0 10px;
+  }
+
+  &__content {
+    @include fonts(14px, 200, 21px, $grey);
+    margin-bottom: 10px;
+  }
+
+  &__duration {
+    @include fonts(14px, 200, 21px, $light-grey);
+    background: url("../img/icons/time.svg") no-repeat 0px 3px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__check {
+    background-color: #f6f7f2;
+    padding: 14px;
+
+    input {
+      display: none;
+
+      &:checked + label::before {
+        background: $green url("../img/icons/checked.svg") no-repeat 0 2px;
+        border-color: $green;
+      }
+    }
+
+    label {
+      @include fonts(18px, 400, 28px, $grey);
+      padding-left: 45px;
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 7px;
+        width: 14px;
+        height: 14px;
+        background-color: #fff;
+        border: 2px solid $light-grey;
+      }
+
+      &:hover {
+        &::before {
+          border-color: $green;
+        }
+      }
+    }
+  }
+
+  &__overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($green, .2);
+    z-index: 10;
+  }
+
+  &__complete {
+    @include fonts(41px, 500, 50px, $green);
+    display: none;
+    position: absolute;
+    margin: 50% 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: transparent url("../img/icons/complete.svg") no-repeat 3px 14px;
+    width: 500px;
+  }
+}

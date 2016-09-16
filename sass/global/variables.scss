@@ -1,0 +1,36 @@
+$green: #8cc34b;
+$black: #212121;
+$grey: #727272;
+$light-grey: #b6b6b6;
+$link-color: #03a9f4;
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container($top, $bottom) {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding: $top 90px $bottom;
+
+  h2[class$="__title"] {
+    @include fonts(42px, 500, 50px, $black);
+    margin-bottom: 12px;
+  }
+
+  p[class$="__retreat"] {
+    @include fonts(21px, 200, 28px, $grey);
+  }
+}
+
+@mixin fonts($size, $weight, $height, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  color: $color;
+}

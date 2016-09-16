@@ -1,109 +1,157 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Тестовое задание</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+<div class="page-wrapper">
   <header class="page-header">
-    <div class="user">
-      <img src="img/user.jpg" width="62" height="62" alt="Это Я!" class="user__logo">
-      <p class="user__name">Быстров Борис Викторович</p>
-      <p class="user__email">bystrov@gmail.com</p>
-    </div>
-    <div class="social"><a href="#" class="social__link social__link--git">git</a><a href="#" class="social__link social__link--skype">skype</a><a href="#" class="social__link social__link--vk">vk</a>
-    </div>
-  </header>
-  <main class="page-wrapper">
-    <div class="information">
-      <h2 class="information__title">О будущем ученике</h2>
-      <p class="information__retreat">Ребятам из Loftschool будет полезно узнать немного обо мне</p>
-      <div class="information__items">
-        <div class="information__item information__item--about">
-          <h3 class="information__title">Немного обо мне</h3>
-          <p class="information__content">Я живу в Санкт-Петербурге (Россия). Мне 26 лет. Высшее образование - закончил НИУ ИТМО.Опыт в разработке 1 год. Уже окончил курсы в Академии Программирования, где не плохо научился верстать. Пока есть только один сайт, которым могу похвастаться:
-            <a href="http://yandex.ru">www.yandex.ru</a>
-          </p>
-        </div>
-        <div class="information__item information__item--experience">
-          <h3 class="information__title">Мой опыт в разработке</h3>
-          <p class="information__content">В этом блоке я расскажу о себе, что я уже умею. Здесь я укажу другие курсы, которые до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру: html5, css3, sass, jade, git и пр.</p>
+    <div class="page-header__container">
+      <div class="user">
+        <img src="img/user.jpg" width="62" height="62" alt="Это Я!" class="user__logo">
+        <div class="user__info">
+          <p class="user__name">Быстров Борис Викторович</p>
+          <p class="user__email">bystrov@gmail.com</p>
         </div>
       </div>
+      <div class="social">
+        <a href="#" class="social__link social__link--git">git</a>
+        <a href="#" class="social__link social__link--skype">skype</a>
+        <a href="#" class="social__link social__link--vk">vk</a>
+      </div>
     </div>
-    <div class="courses">
+  </header>
+  <div class="information">
+    <h2 class="information__title">О будущем ученике</h2>
+    <p class="information__retreat">Ребятам из Loftschool будет полезно узнать немного обо мне</p>
+    <div class="information__items">
+      <div class="information__item information__item--about">
+        <h3 class="information__item-title">Немного обо мне</h3>
+        <p class="information__content">
+          Я живу в Санкт-Петербурге (Россия). Мне 26&nbsp;лет. Высшее образование - закончил
+          НИУ ИТМО. Опыт в разработке 1 год. Уже окончил курсы в Академии Программирования,
+          где не плохо научился&nbsp;верстать.<br>Пока есть только один сайт, которым могу
+          похвастаться: <a href="http://yandex.ru">www.yandex.ru</a>
+        </p>
+      </div>
+      <div class="information__item information__item--experience">
+        <h3 class="information__item-title">Мой опыт в разработке</h3>
+        <p class="information__content">
+          В этом блоке я расскажу о себе, что я уже умею. Здесь я укажу другие курсы, которые
+          до этого я уже проходил. Могу перечислить&nbsp;технологии, которыми уже умею
+          пользоваться. К примеру: html5, css3, sass, jade, git и пр.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="courses">
+    <div class="courses__wrapper">
       <h2 class="courses__title">Курсы на loftblog</h2>
       <p class="courses__retreat">которые мне помогут в выполнении этого задания</p>
       <div class="courses__items">
         <div class="courses__item courses__item--js">
-          <h3 class="courses__name">Основы JavaScript</h3>
-          <p class="courses__content">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
-          <p class="courses__duration">24 урока (6 часов 46 минут)</p>
+          <div class="courses__container">
+            <h3 class="courses__name">Основы JavaScript</h3>
+            <p class="courses__content">
+              Видеокурс о одном из самых популярных языков программирования - JavaScript.
+              Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+            </p>
+            <p class="courses__duration">24 урока (6 часов 46 минут)</p>
+          </div>
           <div class="courses__check">
             <input type="checkbox" id="js">
             <label for="js">Посмотрел</label>
+            <div class="courses__overlay"></div>
           </div>
-          <div class="courses__overlay"></div>
         </div>
         <div class="courses__item courses__item--jquery">
-          <h3 class="courses__name">Основы JQUERY</h3>
-          <p class="courses__content">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.)</p>
-          <p class="courses__duration">11 уроков (2 часа 6 минут)</p>
+          <div class="courses__container">
+            <h3 class="courses__name">Основы JQUERY</h3>
+            <p class="courses__content">
+              Видеокурс о одном из самых популярных языков программирования - JavaScript.
+              Изучая этот курс вы познаете этот прекрасный язык от самых основ.)
+            </p>
+            <p class="courses__duration">11 уроков (2 часа 6 минут)</p>
+          </div>
           <div class="courses__check">
             <input type="checkbox" id="jquery">
             <label for="jquery">Посмотрел</label>
+            <div class="courses__overlay"></div>
           </div>
-          <div class="courses__overlay"></div>
         </div>
         <div class="courses__item courses__item--base">
-          <h3 class="courses__name">Базовые элементы страницы</h3>
-          <p class="courses__content">Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.</p>
-          <p class="courses__duration">9 уроков (2 часа 7 минут)</p>
+          <div class="courses__container">
+            <h3 class="courses__name">Базовые элементы страницы</h3>
+            <p class="courses__content">
+              Видеокурс по верстке и программированию основных и популярных элементов сайтов.
+              Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
+            </p>
+            <p class="courses__duration">9 уроков (2 часа 7 минут)</p>
+          </div>
           <div class="courses__check">
             <input type="checkbox" id="base">
             <label for="base">Посмотрел</label>
+            <div class="courses__overlay"></div>
           </div>
-          <div class="courses__overlay"></div>
         </div>
         <div class="courses__item courses__item--adaptive">
-          <h3 class="courses__name">Создание адаптивных сайтов</h3>
-          <p class="courses__content">В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.</p>
-          <p class="courses__duration">7 уроков (2 часа 11 минут)</p>
+          <div class="courses__container">
+            <h3 class="courses__name">Создание адаптивных сайтов</h3>
+            <p class="courses__content">
+              В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная
+              верстка и дизайн.
+            </p>
+            <p class="courses__duration">7 уроков (2 часа 11 минут)</p>
+          </div>
           <div class="courses__check">
             <input type="checkbox" id="adaptive">
             <label for="adaptive">Посмотрел</label>
+            <div class="courses__overlay"></div>
           </div>
-          <div class="courses__overlay"></div>
         </div>
         <div class="courses__item courses__item--generator">
-          <h3 class="courses__name">Верстка адаптивной css галереи</h3>
-          <p class="courses__content">В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.</p>
-          <p class="courses__duration">6 уроков (1 час 9 минут)</p>
+          <div class="courses__container">
+            <h3 class="courses__name">Верстка адаптивной css галереи</h3>
+            <p class="courses__content">
+              В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика,
+              которые помогут вам решать поставленные задачи более быстро и эффективно.
+            </p>
+            <p class="courses__duration">6 уроков (1 час 9 минут)</p>
+          </div>
           <div class="courses__check">
             <input type="checkbox" id="generator">
             <label for="generator">Посмотрел</label>
+            <div class="courses__overlay"></div>
           </div>
-          <div class="courses__overlay"></div>
         </div>
         <div class="courses__item courses__item--gallery">
-          <h3 class="courses__name">Верстка адаптивной css галереи</h3>
-          <p class="courses__content">В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.</p>
-          <p class="courses__duration">4 урока (50 минут)</p>
+          <div class="courses__container">
+            <h3 class="courses__name">Верстка адаптивной css галереи</h3>
+            <p class="courses__content">
+              В этом курсе мы разберем как сверстать адаптивную css галерею.
+              Также познакомимся с Flexbox.
+            </p>
+            <p class="courses__duration">4 урока (50 минут)</p>
+          </div>
           <div class="courses__check">
             <input type="checkbox" id="gallery">
             <label for="gallery">Посмотрел</label>
+            <div class="courses__overlay"></div>
           </div>
-          <div class="courses__overlay"></div>
         </div>
       </div>
     </div>
-  </main>
-  <footer class="page-footer">
-    <p>А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера, не зависимо от количества контента на странице и размера окна.</p>
-  </footer>
+    <div class="courses__complete">Задание выполнено</div>
+  </div>
+</div>
+<footer class="page-footer">
+  <p>
+    А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,
+    не зависимо от количества контента на странице и размера окна.
+  </p>
+</footer>
+<script src="js/script.js"></script>
 </body>
-
 </html>

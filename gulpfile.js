@@ -38,7 +38,7 @@ gulp.task("serve", ["style"], function() {
         server: "."
     });
     gulp.watch("sass/**/*.scss", ["style"]);
-    gulp.watch("jade/**/*.jade",["jade", "prettify"]);
+    gulp.watch("jade/**/*.jade",["jade"]);
     gulp.watch("*.html")
         .on("change", server.reload);
 });

@@ -5,13 +5,15 @@ html
         meta(charset="utf-8")
         link(rel="stylesheet" href="css/style.css")
     body
-        header.page-header
-            include blocks/header/user
-            include blocks/header/social
-        main.page-wrapper
+        .page-wrapper
+            header.page-header
+                .page-header__container
+                    include blocks/header/user
+                    include blocks/header/social
             include blocks/information/information
             include blocks/courses/courses
         footer.page-footer
             p.
                 А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,
                 не зависимо от количества контента на странице и размера окна.
+        script(src="js/script.js")

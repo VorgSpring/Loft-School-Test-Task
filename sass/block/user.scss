@@ -1,0 +1,26 @@
+.user {
+  width: 750px;
+  float: left;
+
+  &__logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 16px 0 -2px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+
+  &__info {
+    display: inline-block;
+    vertical-align: middle;
+    width: 600px;
+  }
+
+  &__name {
+    @include fonts(21px, 500, 28px, #fff);
+  }
+
+  &__email {
+    @include fonts(14px, 400, 24px, rgba(255, 255, 255, .7));
+  }
+}
