@@ -3,6 +3,7 @@
   height: 72px;
   margin-top: -72px;
   background-color: $black;
+  min-width: 1200px;
 
   p {
     @include fonts(14px, 400, 21px, #fff);

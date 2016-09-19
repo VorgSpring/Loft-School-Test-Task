@@ -3,7 +3,9 @@ mixin courseItem(item)
         .courses__container
             h3.courses__name= item.name
             p.courses__content= item.content
-            p.courses__duration= item.duration
+            p.courses__duration
+                span 
+                |#{item.duration}
         .courses__check
             input(type="checkbox", id="#{item.id}")
             label(for="#{item.id}") Посмотрел

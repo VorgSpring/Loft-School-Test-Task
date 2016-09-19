@@ -15,7 +15,7 @@
     "gulp-sass": "^2.3.2"
   },
   "scripts": {
-    "build": "gulp style && gulp jade",
+    "build": "gulp style",
     "start": "npm run build && gulp serve"
   }
 }

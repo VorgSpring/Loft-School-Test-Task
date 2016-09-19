@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
 html {
@@ -196,6 +197,12 @@ th {
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 html,
 body {
   height: 100%;
@@ -214,6 +221,7 @@ li {
 }
 .page-wrapper {
   min-height: 100%;
+  min-width: 1200px;
 }
 .page-wrapper::after {
   display: block;
@@ -438,9 +446,15 @@ li {
   font-weight: 200;
   line-height: 21px;
   color: #b6b6b6;
-  background: url("../img/icons/time.svg") no-repeat 0px 3px;
-  padding-left: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
+}
+.courses__duration span {
+  font-family: FontAwesome;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 21px;
+  color: #b6b6b6;
+  margin-right: 4px;
 }
 .courses__check {
   background-color: #f6f7f2;
@@ -450,7 +464,13 @@ li {
   display: none;
 }
 .courses__check input:checked + label::before {
-  background: #8cc34b url("../img/icons/checked.svg") no-repeat 0 2px;
+  font-family: FontAwesome;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #fff;
+  content: '';
+  background-color: #8cc34b;
   border-color: #8cc34b;
 }
 .courses__check label {
@@ -493,17 +513,27 @@ li {
   color: #8cc34b;
   display: none;
   position: absolute;
-  margin: 50% 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background: transparent url("../img/icons/complete.svg") no-repeat 3px 14px;
+  letter-spacing: 1px;
   width: 500px;
+}
+.courses__complete span {
+  font-family: FontAwesome;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #8cc34b;
+  margin-right: 12px;
 }
 .page-footer {
   position: relative;
   height: 72px;
   margin-top: -72px;
   background-color: #212121;
+  min-width: 1200px;
 }
 .page-footer p {
   font-size: 14px;
